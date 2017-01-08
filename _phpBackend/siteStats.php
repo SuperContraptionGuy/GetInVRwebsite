@@ -26,7 +26,8 @@ function pageLoadStat($pageName) {
 		//	Extract page information for database entry
 		$pageData = explode("_", $pageName);
 		$pageName = $pageData[0];
-		$pageVariant = explode(".", $pageData[1])[0];
+		$pageNameSplit = explode(".", $pageData[1]);
+		$pageVariant = $pageNameSplit[0];
 
 		//	Get the current time for the timestamp value
 		$timestamp = new DateTime();
@@ -235,7 +236,8 @@ function updateDatabaseEnty($dataRelay, $modifyJson) {
 		//	Testing ONly
 		// echo "found rows. <br>";
 
-		$jsonData = mysqli_fetch_array($result, MYSQLI_NUM)[0];
+		$sqlresult = mysqli_fetch_array($result, MYSQLI_NUM);
+		$jsonData = $sqlresult[0];
 
 		//		Testing only
 		// var_dump($jsonData);
@@ -374,8 +376,6 @@ function updateDatabaseEnty($dataRelay, $modifyJson) {
 	]'
 
 
-
+*/
 
 ?>
-
-*/

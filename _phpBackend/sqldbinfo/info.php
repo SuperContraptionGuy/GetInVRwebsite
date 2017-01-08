@@ -1,9 +1,9 @@
 <?php
 
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'contraptions');
+define('DB_USER', 'you2industries');
+define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
-define('DB_NAME', "my_testdb");
+define('DB_NAME', "my_you2industries");
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
