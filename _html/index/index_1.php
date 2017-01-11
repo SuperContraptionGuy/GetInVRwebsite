@@ -181,6 +181,13 @@
                     <p>Open Monday - Saturday, 1pm - 10pm; Closed Sunday</p>
                   <!-- A/B Price Testing goes here \/ -->
 
+                  <!-- Include -->
+                  <?php
+
+                    require 'abprice.php';
+
+                  ?>
+
                   <!-- ============================== -->
                     <div class="formmain">
                     <form action="/formSubmit.php" method="POST">
