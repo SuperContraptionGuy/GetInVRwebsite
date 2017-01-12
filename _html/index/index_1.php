@@ -139,7 +139,7 @@
                     <p class="lead">The HTC Vive is one of the consumer and commercial ready devices today. This Headset has leading edge technology that allows the user to experience anything they want.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="_assets/img/vive.png" alt="">
+                    <img class="img-responsive" src="_assets/img/vive.jpg" alt="">
                 </div>
             </div>
 
