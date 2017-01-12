@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 require("sqldbinfo/info.php");
 
 //	Get the json file for the current user if it exisits
-$query = "SELECT * from visitorStats;";
+$query = "SELECT * from visitorStats ORDER BY SessionStartTime DESC;";
 $result = mysqli_query($conn, $query);
 
 echo "<table>"; // start a table tag in the HTML
