@@ -1,17 +1,10 @@
-<!--
-
-Author:	Hudson Kendall
-
-Purpose of this file:
-
-	To provide a single function for all the [page].php files in the root directory to load a randomized file in a set of files for the purpose of Split Testing.
-
-
--->
-
-
-
 <?php
+
+		// Author:	Hudson Kendall
+
+		// Purpose of this file:
+
+		// 	To provide a single function for all the [page].php files in the root directory to load a randomized file in a set of files for the purpose of Split Testing.
 
 
 

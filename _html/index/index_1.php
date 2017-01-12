@@ -86,7 +86,7 @@
                                 <a href="https://twitter.com/you2industries" class="btn btn-default btn-lg keepStats" id="twitter"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
                             <li>
-                                <a href="#services" class="btn btn-danger btn-lg keepstats" id="seeHowButton"><span class="network-name">See How</span></a>
+                                <a href="#services" class="btn btn-danger btn-lg keepStats" id="seeHowButton"><span class="network-name">See How</span></a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/you2industries" class="btn btn-default btn-lg keepStats" id="faecbook"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
