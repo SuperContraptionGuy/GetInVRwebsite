@@ -113,7 +113,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
-                    <p class="lead">Watch this video to see how the Virtual Reality Experiance works.</p>
+                    <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <span style="position:relative;right:20%;"><iframe class="keepStats" id="youtube" width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe></span>
