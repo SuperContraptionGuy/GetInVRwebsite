@@ -122,7 +122,17 @@ include_once("_phpBackend/sqldbinfo/info.php");
 
 			$table = "`Email List`";
 			// $url = 'index.html';
-		} else {
+		} else if($action == 'contactForm') {
+
+			$table = ;
+		} else if($action == 'reservationForm') {
+
+			$table = ;
+		} else if($action == 'newsletterForm') {
+
+			$table = ;
+		}
+		{
 			$table = "`none`";
 		}
 		// print 'table selected: ' . $table . '<br>';
