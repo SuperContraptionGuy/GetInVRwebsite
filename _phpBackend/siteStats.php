@@ -133,7 +133,7 @@ function updateDatabaseEnty($dataRelay, $modifyJson) {
 	$session = session_id();
 
 	//	Testing ONly
-	echo "sessionID: " . $session . '<br>';
+	// echo "sessionID: " . $session . '<br>';
 
 	//	Get the json file for the current user if it exisits
 	$query = "SELECT visitorStats.path from visitorStats where visitorStats.SessionID = '$session';";

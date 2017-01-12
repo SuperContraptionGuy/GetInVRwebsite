@@ -22,8 +22,8 @@ ob_start(); // ensures anything dumped out will be caught
 
 
 
-include("_phpBackend/sqldbinfo/info.php");
-	include("_phpBackend/mailer.php");
+include_once("_phpBackend/sqldbinfo/info.php");
+	include_once("_phpBackend/mailer.php");
 
 	function populateArray($queryobj) {
 

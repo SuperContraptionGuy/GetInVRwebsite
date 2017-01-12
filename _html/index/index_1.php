@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>You2 Industries</title>
+    <!-- This is Jack, Hello Hudson -->
     <!-- Bootstrap Core CSS -->
     <link href="/_css/bootstrap.min.css" rel="stylesheet">
 
@@ -177,7 +178,17 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Reserve a Time</h2>
-                    <p class="section-heading">Open Monday - Saturday, 1pm - 10pm; Closed Sunday</p>
+                    <p>Open Monday - Saturday, 1pm - 10pm; Closed Sunday</p>
+                  <!-- A/B Price Testing goes here \/ -->
+
+                  <!-- Include -->
+                  <?php
+
+                    require 'abprice.php';
+
+                  ?>
+
+                  <!-- ============================== -->
                     <div class="formmain">
                     <form action="/formSubmit.php" method="POST">
                       <div class="form-group">

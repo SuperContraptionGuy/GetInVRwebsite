@@ -31,7 +31,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 
 	// Open the table
 	echo "<table>";
-	echo "<tr><th>Page Name</th><th>TimeVisited</th><th>Actions Taken</th></tr>";
+	echo "<tr><th>Page Name</th><th>Page Variant</th><th>TimeVisited</th><th>Actions Taken</th></tr>";
 
 	// Cycle through the array
 	foreach ($data as $idx => $page) {
@@ -39,6 +39,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 	    // Output a row
 	    echo "<tr>";
 	    echo "<td>$page->page</td>";
+	    echo "<td>$page->variant</td>";
 	    echo "<td>$page->timeStamp</td>";
 	    echo "<td>";
 

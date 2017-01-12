@@ -25,7 +25,8 @@ function loadAlternate($pageName) {
 	//	The number of alternate files for each page
 	$alternates = array(
 		'index' => 1, 
-		'test' => 1
+		'test' => 1,
+		'abprice' => 4
 		);
 
 
@@ -64,7 +65,9 @@ function loadAlternate($pageName) {
 		//	Construct the string equal to the page's name
 		//	Format: [page]_[x].html where index 'x' starts at 1
 		//	Example: index_3.html
-		$loadPageName = $pageName . '_' . $pageIndex . '.html';
+		//$loadPageName = $pageName . '_' . $pageIndex . '.html';
+		//	Switched to only .php file names.
+		$loadPageName = $pageName . '_' . $pageIndex . '.php';
 
 		//	Include the specified file for display to the user
 		require '_html/' . $pageName . '/' . $loadPageName;
