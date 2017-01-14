@@ -14,7 +14,7 @@
 <body>
   <ul style="list-style-type:none;"><b>Pricing:</b>
     <li><b>Individual Pricing:</b> $50 per hour</li>
-    <li><b>Group Pricing:</b> $45 per hour</li>
+    <li><b>Group Pricing:</b> $45 per person per hour</li>
   </ul>
 </body>
 </html>
