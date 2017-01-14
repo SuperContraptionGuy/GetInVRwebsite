@@ -14,7 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		
+
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
@@ -91,11 +91,11 @@ var STYLE_PREFIX = 'wsite';
 <!--script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script--><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
-	
+
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
-				[{"id":"254820830365147478","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.html","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+				[{"id":"254820830365147478","title":"Home","url":"index_2.php","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.php","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.php","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.php","target":"","nav_menu":false,"nonclickable":false}],
 				"122922518957538381",
 				'',
 				'active',
@@ -113,8 +113,8 @@ var STYLE_PREFIX = 'wsite';
 	})(window._W && _W.jQuery)
 //-->
 </script>
-		
-		
+
+
 	</head>
 	<body class="header-page page-has-banner  wsite-theme-light  wsite-page-reservations"><div class="wrapper">
     <div class="birdseye-header">
@@ -130,39 +130,39 @@ var STYLE_PREFIX = 'wsite';
           <div class="nav desktop-nav"><ul class="wsite-menu-default">
 		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
 			<a
-						href="index.html"
+						href="index_2.php"
 				class="wsite-menu-item"
 				>
 				Home
 			</a>
-			
+
 		</li>
 		<li id="active" class="wsite-menu-item-wrap">
 			<a
-						href="reservations.html"
+						href="reservations.php"
 				class="wsite-menu-item"
 				>
 				Reservations
 			</a>
-			
+
 		</li>
 		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
 			<a
-						href="updates.html"
+						href="updates.php"
 				class="wsite-menu-item"
 				>
 				Updates
 			</a>
-			
+
 		</li>
 		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
 			<a
-						href="contact.html"
+						href="contact.php"
 				class="wsite-menu-item"
 				>
 				Contact
 			</a>
-			
+
 		</li>
 </ul>
 </div>
@@ -176,7 +176,7 @@ var STYLE_PREFIX = 'wsite';
 	<div class="wsite-section-wrap">
 	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="background-image: url(&quot;/Assets/MaxHeader.jpg&quot;) ;background-repeat: no-repeat ;background-position: undefined undefined ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
 		<div class="wsite-section-content">
-			
+
           <div class="container">
             <div class="banner">
 				<div class="wsite-section-elements">
@@ -184,7 +184,7 @@ var STYLE_PREFIX = 'wsite';
 				</div>
 			</div>
           </div>
-      
+
 		</div>
 		<div class=""></div>
 	</div>
@@ -206,11 +206,11 @@ var STYLE_PREFIX = 'wsite';
 <div>
 				<!-- Include reservation form here -->
 				<script src="http://www.w3schools.com/lib/w3data.js"></script>
-				<div w3-include-html="reservationForm.html"></div>
+				<div w3-include-html="reservationForm.php"></div>
 				<script>
 				w3IncludeHTML();
 				</script>
-			
+
 
 			</div>
 			</div>
@@ -223,7 +223,7 @@ var STYLE_PREFIX = 'wsite';
 </div>
 
     </div>
-    
+
     <div class="footer-wrap">
       <div class="container">
         <div class="footer"></div>
@@ -236,39 +236,39 @@ var STYLE_PREFIX = 'wsite';
     <ul class="wsite-menu-default">
     		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
     			<a
-    						href="index.html"
+    						href="index_2.php"
     				class="wsite-menu-item"
     				>
     				Home
     			</a>
-    			
+
     		</li>
     		<li id="active" class="wsite-menu-item-wrap">
     			<a
-    						href="reservations.html"
+    						href="reservations.php"
     				class="wsite-menu-item"
     				>
     				Reservations
     			</a>
-    			
+
     		</li>
     		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
     			<a
-    						href="updates.html"
+    						href="updates.php"
     				class="wsite-menu-item"
     				>
     				Updates
     			</a>
-    			
+
     		</li>
     		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
     			<a
-    						href="contact.html"
+    						href="contact.php"
     				class="wsite-menu-item"
     				>
     				Contact
     			</a>
-    			
+
     		</li>
     </ul>
   </div>
@@ -277,8 +277,6 @@ var STYLE_PREFIX = 'wsite';
   <script type="text/javascript" src="files/theme/custom.js"></script>
 
 
-		
+
 	</body>
 </html>
-
-

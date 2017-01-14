@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		
+
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
@@ -84,11 +84,11 @@ var STYLE_PREFIX = 'wsite';
 <script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
-	
+
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
-				[{"id":"254820830365147478","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.html","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+				[{"id":"254820830365147478","title":"Home","url":"index_2.php","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.php","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.php","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.php","target":"","nav_menu":false,"nonclickable":false}],
 				"803485975871016830",
 				'',
 				'active',
@@ -106,13 +106,13 @@ var STYLE_PREFIX = 'wsite';
 	})(window._W && _W.jQuery)
 //-->
 </script>
-		
+
 
 <!--script src="arrive.js"></script>
 <script src="handleforms.js"></script-->
 
 
-		
+
 	</head>
 	<body class="header-page page-has-banner  wsite-theme-light  wsite-page-contact"><div class="wrapper">
     <div class="birdseye-header">
@@ -128,39 +128,39 @@ var STYLE_PREFIX = 'wsite';
           <div class="nav desktop-nav"><ul class="wsite-menu-default">
 		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
 			<a
-						href="index.html"
+						href="index_2.php"
 				class="wsite-menu-item"
 				>
 				Home
 			</a>
-			
+
 		</li>
 		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
 			<a
-						href="reservations.html"
+						href="reservations.php"
 				class="wsite-menu-item"
 				>
 				Reservations
 			</a>
-			
+
 		</li>
 		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
 			<a
-						href="updates.html"
+						href="updates.php"
 				class="wsite-menu-item"
 				>
 				Updates
 			</a>
-			
+
 		</li>
 		<li id="active" class="wsite-menu-item-wrap">
 			<a
-						href="contact.html"
+						href="contact.php"
 				class="wsite-menu-item"
 				>
 				Contact
 			</a>
-			
+
 		</li>
 </ul>
 </div>
@@ -174,7 +174,7 @@ var STYLE_PREFIX = 'wsite';
 	<div class="wsite-section-wrap">
 	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="background-image: url(&quot;/Assets/HudsonHeader.jpg&quot;) ;background-repeat: no-repeat ;background-position: 50.00% 44.57% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
 		<div class="wsite-section-content">
-			
+
           <div class="container">
             <div class="banner">
 				<div class="wsite-section-elements">
@@ -182,7 +182,7 @@ var STYLE_PREFIX = 'wsite';
 				</div>
 			</div>
           </div>
-      
+
 		</div>
 		<div class=""></div>
 	</div>
@@ -206,16 +206,16 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
+
+
 
 <div class="paragraph">This is GetInVR, a You2 Industries venture founded by Hudson Kendall and Jack Fernald. &nbsp;We provide high quality Virtual Reality experiences for groups of all shapes and sizes, from small family outings, to big horror seeking friend groups. &nbsp;We'll keep you up to date as our business grows and evolves into it's eventual form. &nbsp;Thank you for your interest in our company and feel free to contact us below.</div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
+
+
 
 <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
 <a>
@@ -225,7 +225,7 @@ var STYLE_PREFIX = 'wsite';
 </div></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -240,8 +240,8 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:49.59595959596%; padding:0 15px;">
-					
-						
+
+
 
 <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
 <a>
@@ -255,10 +255,10 @@ var STYLE_PREFIX = 'wsite';
 <div class="paragraph">&#8203; &nbsp; &nbsp; Fresh out of high school, I'm ready to start making some changes in this world. It's my pleasure to meet new people and continuously learn from them all while honing my skills in Institution Building. This project is Jack's and my second startup together, and, as CEO and tech officer, I'm excited to share the experiences of VR with all of you!<br />&#8203;<br />hudson.kendall@you2industries.com</div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:50.40404040404%; padding:0 15px;">
-					
-						
+
+
 
 <div><div class="wsite-image wsite-image-border-border-width:0 " style="padding-top:10px;padding-bottom:0px;margin-left:0px;margin-right:10px;text-align:left">
 <a>
@@ -272,7 +272,7 @@ var STYLE_PREFIX = 'wsite';
 <div class="paragraph">&nbsp; &nbsp; &nbsp;&nbsp;<span style="color:rgb(98, 98, 98)">I love the thrill of starting something from scratch and feeling my way through the dark to find the amazing success at the end of the tunnel. This is my second startup with Hudson, both being centered around expanding the human experiance. I'm the CFO and Public Relations officer at You2 Industries along with many other duties I share with Hudson. &nbsp;</span><br /><br />&#8203;<br />&#8203;jack.fernald@you2industries.com</div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -347,9 +347,9 @@ var STYLE_PREFIX = 'wsite';
 
 				<script>
 
-					
+
 				</script>
-			
+
 
 			</div>
 			</div>
@@ -362,7 +362,7 @@ var STYLE_PREFIX = 'wsite';
 </div>
 
     </div>
-    
+
     <div class="footer-wrap">
       <div class="container">
         <div class="footer"></div>
@@ -375,39 +375,39 @@ var STYLE_PREFIX = 'wsite';
     <ul class="wsite-menu-default">
     		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
     			<a
-    						href="index.html"
+    						href="index_2.php"
     				class="wsite-menu-item"
     				>
     				Home
     			</a>
-    			
+
     		</li>
     		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
     			<a
-    						href="reservations.html"
+    						href="reservations.php"
     				class="wsite-menu-item"
     				>
     				Reservations
     			</a>
-    			
+
     		</li>
     		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
     			<a
-    						href="updates.html"
+    						href="updates.php"
     				class="wsite-menu-item"
     				>
     				Updates
     			</a>
-    			
+
     		</li>
     		<li id="active" class="wsite-menu-item-wrap">
     			<a
-    						href="contact.html"
+    						href="contact.php"
     				class="wsite-menu-item"
     				>
     				Contact
     			</a>
-    			
+
     		</li>
     </ul>
   </div>
@@ -415,6 +415,6 @@ var STYLE_PREFIX = 'wsite';
 	<script type="text/javascript" src="files/theme/plugins.js"></script>
   <script type="text/javascript" src="files/theme/custom.js"></script>
 
-		
+
 	</body>
 </html>

@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		
+
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
@@ -85,11 +85,11 @@ var STYLE_PREFIX = 'wsite';
 <script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
-	
+
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
-				[{"id":"254820830365147478","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.html","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+				[{"id":"254820830365147478","title":"Home","url":"index_2.php","target":"","nav_menu":false,"nonclickable":false},{"id":"122922518957538381","title":"Reservations","url":"reservations.php","target":"","nav_menu":false,"nonclickable":false},{"id":"847820669818077116","title":"Updates","url":"updates.php","target":"","nav_menu":false,"nonclickable":false},{"id":"803485975871016830","title":"Contact","url":"contact.php","target":"","nav_menu":false,"nonclickable":false}],
 				"847820669818077116",
 				'',
 				'active',
@@ -107,8 +107,8 @@ var STYLE_PREFIX = 'wsite';
 	})(window._W && _W.jQuery)
 //-->
 </script>
-		
-		
+
+
 	</head>
 	<body class="no-header-page page-has-banner  wsite-theme-light  wsite-page-updates wsite-blog-index"><div class="wrapper">
     <div class="birdseye-header">
@@ -124,39 +124,39 @@ var STYLE_PREFIX = 'wsite';
           <div class="nav desktop-nav"><ul class="wsite-menu-default">
 		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
 			<a
-						href="index.html"
+						href="index_2.php"
 				class="wsite-menu-item"
 				>
 				Home
 			</a>
-			
+
 		</li>
 		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
 			<a
-						href="reservations.html"
+						href="reservations.php"
 				class="wsite-menu-item"
 				>
 				Reservations
 			</a>
-			
+
 		</li>
 		<li id="active" class="wsite-menu-item-wrap">
 			<a
-						href="updates.html"
+						href="updates.php"
 				class="wsite-menu-item"
 				>
 				Updates
 			</a>
-			
+
 		</li>
 		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
 			<a
-						href="contact.html"
+						href="contact.php"
 				class="wsite-menu-item"
 				>
 				Contact
 			</a>
-			
+
 		</li>
 </ul>
 </div>
@@ -167,17 +167,17 @@ var STYLE_PREFIX = 'wsite';
 
     <div class="main-wrap">
       <div class="wsite-elements wsite-not-footer">
-	<table 
-	id="blogTable" 
-		class="wsite-not-footer" 
-	style="border: 0; width: 100%; table-layout: fixed" 
+	<table
+	id="blogTable"
+		class="wsite-not-footer"
+	style="border: 0; width: 100%; table-layout: fixed"
 >
 	<tr>
 	    <td valign="top">
-	        	<div id="847820669818077116-blog" class="blog-body" style="float: left;"> 
+	        	<div id="847820669818077116-blog" class="blog-body" style="float: left;">
 		<div id="wsite-content">	<div id="blog-post-797394322193519121" class="blog-post">
-	
-	
+
+
 		<div class="blog-header">
 			<h2 class="blog-title">
 					<a class="blog-title-link blog-link" href="http://UNSET/updates/website-live-in-3-2-1">Website Live in 3... 2... 1...</a>
@@ -196,28 +196,28 @@ var STYLE_PREFIX = 'wsite';
 
 			</p>
 		</div>
-	
+
 		<div class="blog-separator">&nbsp;</div>
-	
+
 		<div class="blog-content">
 				<h2 class="wsite-content-title">Go!!!</h2>  <div class="paragraph">Welcome to the site! &nbsp;This is the debut of our front page and the beginning of our journey with all of you. &nbsp;Please, look around and send us feedback, we're eager to get to know you all.</div>
 
 		</div>
-	
-	
+
+
 			<div class="blog-social  ">
 		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/2/post/2016/12/website-live-in-3-2-1.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/2/post/2016/12/website-live-in-3-2-1.html" data-text="Website Live in 3... 2... 1... - Get_In_VR" data-count="horizontal"></a></div>
 		<div style="clear:both"></div>
 	</div>
 
-	
+
 		<div class="blog-comments-bottom">
 				<a href="http://UNSET/updates/website-live-in-3-2-1#comments" class="blog-link">
 		0 Comments
 	</a>
 
 		</div>
-	
+
 		<div class="blog-post-separator"></div>
 	</div>
 
@@ -276,39 +276,39 @@ var STYLE_PREFIX = 'wsite';
     <ul class="wsite-menu-default">
     		<li id="pg254820830365147478" class="wsite-menu-item-wrap">
     			<a
-    						href="index.html"
+    						href="index_2.php"
     				class="wsite-menu-item"
     				>
     				Home
     			</a>
-    			
+
     		</li>
     		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
     			<a
-    						href="reservations.html"
+    						href="reservations.php"
     				class="wsite-menu-item"
     				>
     				Reservations
     			</a>
-    			
+
     		</li>
     		<li id="active" class="wsite-menu-item-wrap">
     			<a
-    						href="updates.html"
+    						href="updates.php"
     				class="wsite-menu-item"
     				>
     				Updates
     			</a>
-    			
+
     		</li>
     		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
     			<a
-    						href="contact.html"
+    						href="contact.php"
     				class="wsite-menu-item"
     				>
     				Contact
     			</a>
-    			
+
     		</li>
     </ul>
   </div>
