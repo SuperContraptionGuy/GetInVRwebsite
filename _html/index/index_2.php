@@ -7,11 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		
+
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1482384373" title="wsite-theme-css" />
+<link rel="stylesheet" type="text/css" href="../../_css/main_style.css" title="wsite-theme-css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
@@ -69,7 +69,7 @@
 .wsite-product .wsite-product-price a {}
 }</style>
 <style>
-.wsite-background {background-image: url("/uploads/4/2/5/7/42575673/background-images/1959573408.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
+.wsite-background {background-image: url("../../_assets/img/QuinntonFront.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
 </style>
 		<script><!--
@@ -84,7 +84,7 @@ var STYLE_PREFIX = 'wsite';
 <script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
-	
+
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
@@ -106,13 +106,13 @@ var STYLE_PREFIX = 'wsite';
 	})(window._W && _W.jQuery)
 //-->
 </script>
-		
-
-<script src="arrive.js"></script>
-<script src="handleforms.js"></script>
 
 
-		
+<script src="../../_js/arrive.js"></script>
+<script src="../../_js/handleforms.js"></script>
+
+
+
 	</head>
 	<body class="header-page page-has-banner  wsite-theme-light  wsite-page-index"><div class="wrapper">
     <div class="birdseye-header">
@@ -128,39 +128,39 @@ var STYLE_PREFIX = 'wsite';
           <div class="nav desktop-nav"><ul class="wsite-menu-default">
 		<li id="active" class="wsite-menu-item-wrap">
 			<a
-						href="index.html"
+						href="index_2.php"
 				class="wsite-menu-item"
 				>
 				Home
 			</a>
-			
+
 		</li>
 		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
 			<a
-						href="reservations.html"
+						href="reservations.php"
 				class="wsite-menu-item"
 				>
 				Reservations
 			</a>
-			
+
 		</li>
 		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
 			<a
-						href="updates.html"
+						href="updates.php"
 				class="wsite-menu-item"
 				>
 				Updates
 			</a>
-			
+
 		</li>
 		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
 			<a
-						href="contact.html"
+						href="contact.php"
 				class="wsite-menu-item"
 				>
 				Contact
 			</a>
-			
+
 		</li>
 </ul>
 </div>
@@ -174,7 +174,7 @@ var STYLE_PREFIX = 'wsite';
 	<div class="wsite-section-wrap">
 	<div  class="wsite-section wsite-header-section wsite-section-bg-image wsite-section-effect-parallax" style="height: 792px;background-image: url(&quot;/Assets/QuinntonFront.jpg&quot;) ;background-repeat: no-repeat ;background-position: 50.00% 68.65% ;background-size: 100% ;background-color: transparent ;background-size: cover;background-attachment: fixed;" >
 		<div class="wsite-section-content">
-			
+
           <div class="container">
             <div class="banner">
 				<div class="wsite-section-elements">
@@ -184,7 +184,7 @@ var STYLE_PREFIX = 'wsite';
 				</div>
 			</div>
           </div>
-      
+
 		</div>
 		<div class=""></div>
 	</div>
@@ -221,7 +221,7 @@ var STYLE_PREFIX = 'wsite';
 	</div>
 </div>
 <div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-section-bg-image wsite-section-effect-parallax wsite-background-5 wsite-custom-background" style="height: 755px;vertical-align: top;background-image: url(&quot;/Assets/JackGesture.jpg&quot;) ;background-repeat: no-repeat ;background-position: undefined undefined ;background-size: 100% ;background-color: transparent ;background-size: cover;background-attachment: fixed;" >
+	<div class="wsite-section wsite-body-section wsite-section-bg-image wsite-section-effect-parallax wsite-background-5 wsite-custom-background" style="height: 755px;vertical-align: top;background-image: url(&quot;../_assets/JackGesture.jpg&quot;) ;background-repeat: no-repeat ;background-position: undefined undefined ;background-size: 100% ;background-color: transparent ;background-size: cover;background-attachment: fixed;" >
 		<div class="wsite-section-content">
           <div class="container">
 			<div class="wsite-section-elements">
@@ -230,8 +230,8 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:47.171717171717%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:116px;"></div>
 
@@ -246,15 +246,15 @@ var STYLE_PREFIX = 'wsite';
 <div style="height: 10px; overflow: hidden;"></div></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:52.828282828283%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -281,21 +281,21 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -316,8 +316,8 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:37.543423598221%; padding:0 15px;">
-					
-						
+
+
 
 <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
 <a>
@@ -336,18 +336,18 @@ var STYLE_PREFIX = 'wsite';
 <div class="paragraph" style="text-align:center;"><font color="#ffffff" size="3">info@you2industries.com</font></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:6.3581604480858%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:40.229134323549%; padding:0 15px;">
-					
-						
+
+
 
 <div>
 				<!--  This is where the newsletter form goes -->
@@ -356,20 +356,20 @@ var STYLE_PREFIX = 'wsite';
 				<script>
 				w3IncludeHTML();
 				</script>
-			
+
 
 			</div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:15.869281630144%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -390,45 +390,45 @@ var STYLE_PREFIX = 'wsite';
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:20.000000000002%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:20.000000000002%; padding:0 15px;">
-					
-						
+
+
 
 <div class="paragraph" style="text-align:center;"><font color="#ffffff"><a href="">HOME</a></font></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:20.000000000002%; padding:0 15px;">
-					
-						
+
+
 
 <div class="paragraph" style="text-align:center;"><font color="#ffffff"><a href="reservations.html">RESERVATIONS</a></font></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:20.000000000002%; padding:0 15px;">
-					
-						
+
+
 
 <div class="paragraph" style="text-align:center;"><font color="#ffffff"><a href="contact.html">CONTACTS</a></font></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:20%; padding:0 15px;">
-					
-						
+
+
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
@@ -443,7 +443,7 @@ var STYLE_PREFIX = 'wsite';
 </div>
 
     </div>
-    
+
     <div class="footer-wrap">
       <div class="container">
         <div class="footer"></div>
@@ -461,7 +461,7 @@ var STYLE_PREFIX = 'wsite';
     				>
     				Home
     			</a>
-    			
+
     		</li>
     		<li id="pg122922518957538381" class="wsite-menu-item-wrap">
     			<a
@@ -470,7 +470,7 @@ var STYLE_PREFIX = 'wsite';
     				>
     				Reservations
     			</a>
-    			
+
     		</li>
     		<li id="pg847820669818077116" class="wsite-menu-item-wrap">
     			<a
@@ -479,7 +479,7 @@ var STYLE_PREFIX = 'wsite';
     				>
     				Updates
     			</a>
-    			
+
     		</li>
     		<li id="pg803485975871016830" class="wsite-menu-item-wrap">
     			<a
@@ -488,14 +488,14 @@ var STYLE_PREFIX = 'wsite';
     				>
     				Contact
     			</a>
-    			
+
     		</li>
     </ul>
   </div>
 
-	<script type="text/javascript" src="files/theme/plugins.js"></script>
-  <script type="text/javascript" src="files/theme/custom.js"></script>
+	<script type="text/javascript" src="../../_js/plugins.js"></script>
+  <script type="text/javascript" src="../../_js/custom.js"></script>
 
-		
+
 	</body>
 </html>
