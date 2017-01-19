@@ -6,6 +6,9 @@ th, td {
 	border: 1px solid black;
 }
 </style>
+
+<canvas id="chart"></canvas>
+
 <?php
 
 //	Error reporting:
@@ -20,6 +23,15 @@ require("sqldbinfo/info.php");
 $query = "SELECT * from visitorStats ORDER BY SessionStartTime DESC;";
 $result = mysqli_query($conn, $query);
 
+
+$chartData = array();
+
+
+
+
+
+
+echo "<p>Database dump:</p>";
 echo "<table>"; // start a table tag in the HTML
 echo "<tr><th colspan='3'>The user interactions log</th></tr>";
 echo "<tr><th>SessionID</th><th>Activity</th><th>Session Start Time</th></tr>";
@@ -33,6 +45,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 	echo "<table>";
 	echo "<tr><th>Page Name</th><th>Page Variant</th><th>TimeVisited</th><th>Actions Taken</th></tr>";
 
+
 	// Cycle through the array
 	foreach ($data as $idx => $page) {
 
@@ -42,6 +55,15 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 	    echo "<td>$page->variant</td>";
 	    echo "<td>$page->timeStamp</td>";
 	    echo "<td>";
+
+	    if(isset($chartData[DateTime($page->timeStamp)->format('m-d')])) {
+
+	    	$chartData[DateTime($page->timeStamp)->format('m-d')] += 1;
+	    } else {
+
+	    	$chartData[DateTime($page->timeStamp)->format('m-d')] = 1;
+	    }
+	    
 
 	    // Open the table
 		echo "<table>";
