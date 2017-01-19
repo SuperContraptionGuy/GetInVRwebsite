@@ -12,10 +12,10 @@
     <title>You2 Industries</title>
     <!-- This is Jack, Hello Hudson -->
     <!-- Bootstrap Core CSS -->
-    <link href="/_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/_css/landing-page.css" rel="stylesheet">
+    <link href="../../_css/landing-page.css" rel="stylesheet">
 
 
 
@@ -139,7 +139,7 @@
                     <p class="lead">The HTC Vive is one of the consumer and commercial ready devices today. This Headset has leading edge technology that allows the user to experience anything they want.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="_assets/img/vive.jpg" alt="">
+                    <img class="img-responsive" src="../../_assets/img/vive.jpg" alt="">
                 </div>
             </div>
 
@@ -161,7 +161,7 @@
                     <p class="lead">Not only does the HTC Vive allow you to see what you're doing, it also allows you to interact with the world you're in.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive img-rounded" src="_assets/img/vivehand.jpg" alt="">
+                    <img class="img-responsive img-rounded" src="../../_assets/img/vivehand.jpg" alt="">
                 </div>
             </div>
 
