@@ -15,7 +15,7 @@
     <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../_css/landing-page.css" rel="stylesheet">
+    <link href="../../_css/landing-page8.css" rel="stylesheet">
 
 
 
@@ -80,10 +80,13 @@
                     <div class="intro-message">
                         <h1>Welcome to Virutal Reality</h1>
                         <h3>ReExperience your world</h3>
-                        <video width="300" height="150">
-                          <source src="../../_assets/video/test.mp4" type="video/mp4"/>
-                          <source src="../../_assets/video/test.ogv" type="video/ogg"/>
-                          <source src="../../_assets/video/test.webm" type="video/webm"/>
+                        <div class="fullscreen-bg">
+                          <video width="300" height="150" autoplay="autoplay" muted="" loop="loop">
+                            <source src="../../_assets/video/test.mp4" type="video/mp4"/>
+                            <source src="../../_assets/video/test.ogv" type="video/ogg"/>
+                            <source src="../../_assets/video/test.webm" type="video/webm"/>
+                          </video>
+                        </div>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -172,7 +175,7 @@
         </div>
         <!-- /.container -->
 
-    
+
     <!-- This is the form section of the website  -->
     <a name="reserve"></a> <!-- Used to reference for the menu and buttons -->
       <div class="content-section-b"> <!-- div tag defines the class, which shifts the section to left -->
@@ -227,30 +230,6 @@
     </div>
     <!-- /.content-section-b -->
 
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Reserve your time today:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-
-                        <li>
-                            <a href="#reserve" class="btn btn-danger btn-lg btn-block keepStats" id="bottomReserve"><span class="network-name">Reserve a time</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
