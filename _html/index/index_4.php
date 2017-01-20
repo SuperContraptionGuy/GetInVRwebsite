@@ -18,7 +18,7 @@
     <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../_css/landing-page4.css" rel="stylesheet">
+    <link href="../../_css/landing-page-quote.css" rel="stylesheet">
 
 
 
@@ -186,27 +186,27 @@
                 <div class="col-sm-4">
                 <blockquote>
                       <p class="review">
-                        hello my name is blo
+                        We had so much fun! I recommend!
                       </P>
-                      <cite>your mom</cite>
+                      <cite>-Dorthy S.</cite>
                     </blockquote>
 
                 </div>
               <div class="col-sm-4">
                   <blockquote>
                     <p class="review">
-                      hello my name is blo
+                      You can do things in there I had only ever dreamed about before I tried Get In VR.
                     </P>
-                    <cite>your mom</cite>
+                    <cite>-Dwight L.</cite>
                   </blockquote>
 
               </div>
             <div class="col-sm-4">
                 <blockquote>
                   <p id="review">
-                    hello my name is blo
+                    I brought all my friends and we had a blast!
                   </P>
-                  <cite>your mom</cite>
+                  <cite>-Kurt V.</cite>
                 </blockquote>
 
             </div>

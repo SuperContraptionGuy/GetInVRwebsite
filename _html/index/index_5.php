@@ -1,5 +1,4 @@
-<!--    Honest/Good Reviews, Section 1/2
- -->
+<!--    mixed Reviews, Section 1/2 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,10 +14,10 @@
     <title>You2 Industries</title>
     <!-- This is Jack, Hello Hudson -->
     <!-- Bootstrap Core CSS -->
-    <link href="/_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/_css/landing-page.css" rel="stylesheet">
+    <link href="../../_css/landing-page-quote.css" rel="stylesheet">
 
 
 
@@ -130,22 +129,39 @@
     </div>
     <!-- /.content-section-a -->
 
-    <!--    Reviews section move around.    -->
-    <div class="content-section-a">
+    <div class="content-section-b">
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
-                    <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
+
+            <center><div class="row">
+                <div class="col-sm-4">
+                <blockquote>
+                      <p class="review">
+                        This is the stuff of the imagination.
+                      </P>
+                      <cite>-Natasha S.</cite>
+                    </blockquote>
+
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <span style="position:relative;right:20%;"><iframe class="keepStats" id="youtube" width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe></span>
-                </div>
-                <span style="padding:25px;"><center><a href="#reserve"><button type="button" class="btn btn-lg btn-danger keepStats" id="youTubeReserve">Reserve a Time</button></a></center></span>
+              <div class="col-sm-4">
+                  <blockquote>
+                    <p class="review">
+                      The building seemed small, but when we went in turned out alright.
+                    </P>
+                    <cite>-Sarah S.</cite>
+                  </blockquote>
+
+              </div>
+            <div class="col-sm-4">
+                <blockquote>
+                  <p id="review">
+                    I brought my friends over after my first time, and we all liked it a lot.
+                  </P>
+                  <cite>-Rick T.</cite>
+                </blockquote>
+
             </div>
+        </div></center>
 
         </div>
         <!-- /.container -->
@@ -164,7 +180,7 @@
                     <p class="lead">The HTC Vive is one of the consumer and commercial ready devices today. This Headset has leading edge technology that allows the user to experience anything they want.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="_assets/img/vive.jpg" alt="">
+                    <img class="img-responsive" src="../../_assets/img/vive.jpg" alt="">
                 </div>
             </div>
 
@@ -172,7 +188,7 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.content-section-b -->
+
 
     <div class="content-section-a">
 
