@@ -103,7 +103,46 @@ h6 {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    background-color: white;
 }
+
+.gametypeheader {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Begin of Game listing CSS */
+
+
+.carousel-cell {
+  width: 40%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+
+}
+
+/* cell number */
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.textpos {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* End of Game listing CSS */
+
 
 .formmain {
   padding-right: 10px;
