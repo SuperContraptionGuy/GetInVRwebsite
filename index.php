@@ -21,3 +21,26 @@ pageLoadStat($pageLoaded);
 
 
 ?>
+
+<script src="_js/ifvisible.js"></script>
+<script src="_js/timeme.js"></script>
+
+<script>
+
+TimeMe.setIdleDurationInSeconds(60);
+TimeMe.setCurrentPageName("index");
+TimeMe.initialize();
+
+
+window.onbeforeunload = function (event) {
+	xmlhttp=new XMLHttpRequest();
+	xmlhttp.open("POST","_phpBackend/recordElapsed.php",false);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+	xmlhttp.send("time="+timeSpentOnPage);
+
+};
+
+
+
+</script>

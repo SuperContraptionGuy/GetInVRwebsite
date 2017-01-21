@@ -1,13 +1,13 @@
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+body {background-color: white;}
+h1   {color: black;}
+p    {color: black;}
 th, td {
 	border: 1px solid black;
 }
 </style>
 
-<canvas id="chart"></canvas>
+<canvas id="chart" width="400" height="400"></canvas>
 
 <?php
 
@@ -43,7 +43,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 
 	// Open the table
 	echo "<table>";
-	echo "<tr><th>Page Name</th><th>Page Variant</th><th>TimeVisited</th><th>Actions Taken</th></tr>";
+	echo "<tr><th>Page Name</th><th>Page Variant</th><th>TimeVisited</th><th>Elapsed Time</th><th>Actions Taken</th></tr>";
 
 
 	// Cycle through the array
@@ -54,15 +54,25 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 	    echo "<td>$page->page</td>";
 	    echo "<td>$page->variant</td>";
 	    echo "<td>$page->timeStamp</td>";
+	    echo "<td>$page->elapsedTimeSec</td>";
 	    echo "<td>";
 
-	    if(isset($chartData[DateTime($page->timeStamp)->format('m-d')])) {
+	    if($page->page == 'index') {
 
-	    	$chartData[DateTime($page->timeStamp)->format('m-d')] += 1;
-	    } else {
+		    $dateObj = new DateTime($page->timeStamp);
+		    $date = $dateObj->format('m-d');
 
-	    	$chartData[DateTime($page->timeStamp)->format('m-d')] = 1;
-	    }
+		    if(isset($chartData[$date])) {
+
+		    	$chartData[$date] += 1;
+		    } else {
+
+		    	$chartData[$date] = 1;
+		    }
+
+		    //var_dump($chartData);
+
+		}
 	    
 
 	    // Open the table
@@ -101,6 +111,69 @@ echo "</table>"; //Close the table in HTML
 mysqli_close($conn); //Make sure to close out the database connection
 
 
-
-
+//	make chart
 ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+
+
+var ctx = document.getElementById('chart');
+var myChart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: [ <?php echo "'" . implode("', '", array_reverse(array_keys($chartData))) . "'"; ?> ],
+		datasets: [{
+
+			label: 'Page Loads',
+			data: [ <?php echo implode(', ', array_reverse($chartData)); ?> ],
+			backgroundColor: [ 'rgba(255, 102, 1, 1)'],
+			borderColor: ['rgba(255, 102, 1, 0.2)']
+		}]
+	}
+});
+
+</script>
+
+
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
