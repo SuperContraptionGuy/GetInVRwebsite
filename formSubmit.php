@@ -2,6 +2,9 @@
 // header("Refresh: 3; url= $url");
 ob_start(); // ensures anything dumped out will be caught
 
+// Start session and get the variables for session id
+if(!isset($_SESSION)) session_start();
+
 //		For when debugging is done:
 
 // ob_start(); // ensures anything dumped out will be caught
@@ -112,7 +115,7 @@ include_once("_phpBackend/sqldbinfo/info.php");
 		$table = '';
 		if($action == 'reservation') {
 
-			$table = "`Appointment Requests`";
+			$table = "`appointments`";
 			// $url = 'reservations.html';
 		} else if($action == 'contact') {
 
@@ -133,22 +136,26 @@ include_once("_phpBackend/sqldbinfo/info.php");
 		// 	$value = "'" . $value . "'";
 		// }
 		$keys = implode(", ", array_values($keysArray));
-		$query = "INSERT INTO $table ($keys, timeStamp) VALUES ($values, now())";
+
+		// Session ID
+		$session = session_id();
+
+		$query = "INSERT INTO $table (SessionID, $keys, timeStamp) VALUES ('$session', $values, now())";
 		//$query = "INSERT INTO TestForms VALUES ('hudson', '2016-12-31', 'now', CURRENT_TIMESTAMP)";
 		//$q = mysql_query($query)
 ;
 		// Check for db errors:
 		if(mysqli_query($conn, $query)) {
 
-			// echo "<br>SQL insert sucessuful<br>";
+			echo "<br>SQL insert sucessuful<br>";
 		} else {
-			// echo "<br>MySQL Insertion Failed. Error: " . $query, "<br>" . mysqli_error($conn), "<br>";
+			echo "<br>MySQL Insertion Failed. Error: " . $query, "<br>" . mysqli_error($conn), "<br>";
 		}
 
 
 
 		// Compile info for mailer and send to slaves
-		$returnobj = mysqli_query($conn, "SELECT * FROM `Appointment Requests` WHERE date >= curdate();");
+		$returnobj = mysqli_query($conn, "SELECT * FROM `appointments` WHERE date >= curdate();");
 		$reservations = populateArray($returnobj);
 
 		$returnobj = mysqli_query($conn, "SELECT * FROM `ContactForm` WHERE (date>=(SELECT `Update Emails`.date FROM `Update Emails` ORDER BY date DESC LIMIT 1));");
@@ -198,6 +205,7 @@ if(!$error) {
 //sleep(5);
 // no redirect
 // header( "Location: $url" );
+
 header("Refresh: 3; url= $url");
 
 ob_end_flush();
