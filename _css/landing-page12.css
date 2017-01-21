@@ -136,9 +136,40 @@ h6 {
 }
 
 .textpos {
-  padding: 10px;
+  padding-left: : 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
   color: white;
+}
+
+.imgpos {
+  padding-left: : 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover:after {
+  background: #333;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: 26px;
+  color: #fff;
+  content: attr(title);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 220px;
 }
 
 /* End of Game listing CSS */
