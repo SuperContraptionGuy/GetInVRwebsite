@@ -57,11 +57,13 @@
                         <a class="page-scroll keepStats" id="menuReserve" href="#reserve">Reserve</a>
                     </li>
                     <li>
-                        <a class="page-scroll keepStats" id="menuAbout" href="#about">About</a>
+                        <a class="page-scroll keepStats" id="menuGames" href="#games">Games</a>
                     </li>
                     <li>
-                        <a class="page-scroll keepStats" id="menuServices" href="#services">Services</a>
+                        <a class="page-scroll keepStats" id="menuServices" href="#howitwork">How it works</a>
                     </li>
+                    <li>
+                      <a class="page-scroll keepStats" id="menuAbout" href="#about">About</a>
                     <li>
                         <a class="page-scroll keepStats" id="menuContact" href="#contact">Contact</a>
                     </li>
@@ -107,7 +109,7 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
+	<a  name="howitwork"></a>
     <div class="content-section-a">
 
         <div class="container">
@@ -175,7 +177,7 @@
     <!-- /.content-section-a -->
 
     <!-- /.content-section-a -->
-
+    <a name="games"></a>
     <div class="content-section-b">
           <div class="gametypeheader">
             Adventure Games
@@ -192,18 +194,46 @@
 
           <div class="content-section-b">
                 <div class="gametypeheader">
+                  Family Games
+                </div>
+                  <div class="carousel" data-flickity='{"initialIndex": 2, "wrapAround": true, "freeScroll": true, "autoPlay": true, "rightToLeft": true}' >
+                    <img src="../../_assets/img/googleearth-carousel.jpg" class="imgpos"/>
+                    <img src="../../_assets/img/jobsim-carousel.jpg" class="imgpos"/>
+                    <img src="../../_assets/img/thelab-carousel.jpg" class="imgpos"/>
+                    <img src="../../_assets/img/catlateral-carousel.jpg" class="imgpos"/>
+                  </div>
+                </div>
+
+
+
+
+          <div class="content-section-b">
+                <div class="gametypeheader">
                   Brain Games
                 </div>
-                <div class="carousel" data-flickity='{"initialIndex": 2, "wrapAround": true, "freeScroll": true, "autoPlay": true, "rightToLeft": true}' >
-                    <img src="../../_assets/img/thecabin-carousel.jpg" class="imgpos" title="The Cabin: VR Escape the Room will have you crawling through rafters as you search high and low for clues and objects that'll help you escape. Unravel the mystery of this lonely desolate cabin. You're stuck here, all alone - or are you?"/>
-                    <img src="../../_assets/img/brookhaven-carousel.jpg" class="imgpos" title="Brookhaven is a VR survival shooter for the HTC Vive. Players will have to use the weapons and tools provided to survive ever more terrifying waves of horrific monsters in an attempt to figure out what caused the beginning of the end of the world, and, if they're strong enough, stop it from happening."/>
-                    <img src="../../_assets/img/onward-carousel.jpg" class="imgpos" title="Onward is a Mil-Sim paced tactical multiplayer shooter, being developed for virtual reality head mounted displays. Players will use coordination, communication, and marksmanship skill to complete objectives in online infantry combat."/>
-                    <img src="../../_assets/img/vanishrealms-carousel.jpg" class="imgpos" title="Vanishing Realms is an immersive RPG designed exclusively for Virtual Reality. Grab your sword and fight life-sized monsters in epic face-to-face melee combat. Explore mystic domains, outwit magical wards, seek lost artifacts, wield sorcery and steel to take on denizens of the Undead Realm."/>
-                    <img src="../../_assets/img/rawdata-carousel.jpg" class="imgpos" title="Built from the ground up for VR, Raw Data’s action combat gameplay, intuitive controls, challenging enemies, and sci-fi atmosphere will immerse you within the surreal environments of Eden Corp. Go solo or team up and become the adrenaline-charged heroes of your own futuristic technothriller."/>
-                    <img src="../../_assets/img/valkyrie-carousel.jpg" class="imgpos" title="Become an elite fighter pilot and immerse yourself in virtual reality space combat. Welcome to the next life."/>
+                <div class="carousel" data-flickity='{"initialIndex": 2, "wrapAround": true, "freeScroll": true, "autoPlay": true, "rightToLeft": false}' >
+                    <img src="../../_assets/img/tiltbrush-carousel.jpg" class="imgpos" title="The Cabin: VR Escape the Room will have you crawling through rafters as you search high and low for clues and objects that'll help you escape. Unravel the mystery of this lonely desolate cabin. You're stuck here, all alone - or are you?"/>
+                    <img src="../../_assets/img/vertigo-carousel.jpg" class="imgpos" title="Brookhaven is a VR survival shooter for the HTC Vive. Players will have to use the weapons and tools provided to survive ever more terrifying waves of horrific monsters in an attempt to figure out what caused the beginning of the end of the world, and, if they're strong enough, stop it from happening."/>
+                    <img src="../../_assets/img/tinywheels-carousel.jpg" class="imgpos" title="Onward is a Mil-Sim paced tactical multiplayer shooter, being developed for virtual reality head mounted displays. Players will use coordination, communication, and marksmanship skill to complete objectives in online infantry combat."/>
+                    <img src="../../_assets/img/gravlab-carousel.jpg" class="imgpos" title="Vanishing Realms is an immersive RPG designed exclusively for Virtual Reality. Grab your sword and fight life-sized monsters in epic face-to-face melee combat. Explore mystic domains, outwit magical wards, seek lost artifacts, wield sorcery and steel to take on denizens of the Undead Realm."/>
+                    <img src="../../_assets/img/faccon-carousel.jpg" class="imgpos" title="Built from the ground up for VR, Raw Data’s action combat gameplay, intuitive controls, challenging enemies, and sci-fi atmosphere will immerse you within the surreal environments of Eden Corp. Go solo or team up and become the adrenaline-charged heroes of your own futuristic technothriller."/>
+                    <img src="../../_assets/img/googleearth-carousel.jpg" class="imgpos"/>
                   </div>
                 </div>
     <!-- /.content-section-b -->
+
+    <div class="content-section-b">
+          <div class="gametypeheader">
+            Horror Games
+          </div>
+          <div class="carousel" data-flickity='{"initialIndex": 2, "wrapAround": true, "freeScroll": true, "autoPlay": true, "rightToLeft": true}' >
+              <img src="../../_assets/img/chairroom-carousel.jpg" class="imgpos" title="The Cabin: VR Escape the Room will have you crawling through rafters as you search high and low for clues and objects that'll help you escape. Unravel the mystery of this lonely desolate cabin. You're stuck here, all alone - or are you?"/>
+              <img src="../../_assets/img/thevisitor-carousel.jpg" class="imgpos" title="Brookhaven is a VR survival shooter for the HTC Vive. Players will have to use the weapons and tools provided to survive ever more terrifying waves of horrific monsters in an attempt to figure out what caused the beginning of the end of the world, and, if they're strong enough, stop it from happening."/>
+              <img src="../../_assets/img/sisters-carousel.jpg" class="imgpos" title="Vanishing Realms is an immersive RPG designed exclusively for Virtual Reality. Grab your sword and fight life-sized monsters in epic face-to-face melee combat. Explore mystic domains, outwit magical wards, seek lost artifacts, wield sorcery and steel to take on denizens of the Undead Realm."/>
+              <img src="../../_assets/img/outlast-carousel.jpg" class="imgpos" title="Built from the ground up for VR, Raw Data’s action combat gameplay, intuitive controls, challenging enemies, and sci-fi atmosphere will immerse you within the surreal environments of Eden Corp. Go solo or team up and become the adrenaline-charged heroes of your own futuristic technothriller."/>
+            </div>
+          </div>
+<!-- /.content-section-b -->
 
     <!-- This is the form section of the website  -->
     <a name="reserve"></a> <!-- Used to reference for the menu and buttons -->
