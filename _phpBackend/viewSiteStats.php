@@ -1,14 +1,35 @@
-<style>
-body {background-color: white;}
-h1   {color: black;}
-p    {color: black;}
-th, td {
-	border: 1px solid black;
-}
-</style>
+<head>
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link href="../_css/sitestat.css" rel="stylesheet">
 
-<canvas id="chart" width="400" height="400"></canvas>
+</head>
 
+<div class="container">
+	<h1><center>Experiment name here</center></h1>
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="myChart"></canvas>
+			</div>
+				<div class="col-md-6">
+					<h3>chart goes here</h3>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<h1><center>Experiment name here</center></h1>
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="myChart"></canvas>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<canvas id="myChart"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 
 //	Error reporting:
@@ -73,7 +94,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 		    //var_dump($chartData);
 
 		}
-	    
+
 
 	    // Open the table
 		echo "<table>";
@@ -116,8 +137,6 @@ mysqli_close($conn); //Make sure to close out the database connection
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
-
-
 var ctx = document.getElementById('chart');
 var myChart = new Chart(ctx, {
 	type: 'line',
@@ -137,7 +156,7 @@ var myChart = new Chart(ctx, {
 
 
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="poop" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -167,6 +186,8 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+			maintainAspectRatio: true,
+			responsive: true,
         scales: {
             yAxes: [{
                 ticks: {
