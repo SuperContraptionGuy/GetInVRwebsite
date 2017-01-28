@@ -1,14 +1,38 @@
-<style>
-body {background-color: white;}
-h1   {color: black;}
-p    {color: black;}
-th, td {
-	border: 1px solid black;
-}
-</style>
 
 <canvas id="testing" width="400" height="400"></canvas>
 
+<head>
+	<link href="../_css/bootstrap.min.css" rel="stylesheet">
+	<link href="../_css/sitestat.css" rel="stylesheet">
+
+</head>
+
+<div class="container">
+	<h1><center>Experiment name here</center></h1>
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="myChart"></canvas>
+			</div>
+				<div class="col-md-6">
+					<h3>chart goes here</h3>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<h1><center>Experiment name here</center></h1>
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="myChart"></canvas>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<canvas id="myChart"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 
 //	Error reporting:
@@ -165,7 +189,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 		    //var_dump($chartData);
 
 		}
-	    
+
 
 	    // Open the table
 		echo "<table>";
@@ -236,12 +260,32 @@ echo "</script>";
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<<<<<<< HEAD
+
+
+=======
+<script>
+var ctx = document.getElementById('chart');
+var myChart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: [ <?php echo "'" . implode("', '", array_reverse(array_keys($chartData))) . "'"; ?> ],
+		datasets: [{
+
+			label: 'Page Loads',
+			data: [ <?php echo implode(', ', array_reverse($chartData)); ?> ],
+			backgroundColor: [ 'rgba(255, 102, 1, 1)'],
+			borderColor: ['rgba(255, 102, 1, 0.2)']
+		}]
+	}
+});
+
+</script>
+>>>>>>> origin/Splash-and-Reviews-split-tests
 
 
 
-
-
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="poop" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -271,6 +315,8 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+			maintainAspectRatio: true,
+			responsive: true,
         scales: {
             yAxes: [{
                 ticks: {

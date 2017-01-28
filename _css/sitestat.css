@@ -1,0 +1,13 @@
+body {background-color: white;}
+h1   {color: black;}
+p    {color: black;}
+th, td {
+	border: 1px solid black;
+}
+
+.chartstyle {
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	padding: 10px;
+}
