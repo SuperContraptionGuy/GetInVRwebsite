@@ -7,7 +7,7 @@ th, td {
 }
 </style>
 
-<canvas id="chart" width="400" height="400"></canvas>
+<canvas id="testing" width="400" height="400"></canvas>
 
 <?php
 
@@ -23,10 +23,102 @@ require("sqldbinfo/info.php");
 $query = "SELECT * from visitorStats ORDER BY SessionStartTime DESC;";
 $result = mysqli_query($conn, $query);
 
+// $chartData = array(
+
+// 		'chartName' => '', 
+// 		'xAxisName' => '',
+// 		'yAxisName' => '',
+// 		'data' => array()
+// 	);
+
+// $experimentData = array(
+
+// 		'name' => '',
+// 		'charts' => array(),
+// 	);
+
+// $chartData = array(
+
+// 		'SlashPage' => , 
+// 	);
+
+
+
+
+//
+//			experiments
+//				experiemnt name
+//				contained charts
+//					chart name
+//					axis names
+//					data
+//					
+
+class chartContainer {
+
+	public $name = '';
+	public $xAxisName = '';
+	public $yAxisName = '';
+	public $data = array();
+
+	public function __construct($name, $xAxis, $yAxis) {
+
+		$this->name = $name;
+		$this->xAxisName = $xAxis;
+		$this->yAxisName = $yAxis;
+	}
+
+	public function pushData($value) {
+
+		array_push($this->data, $value);
+	}
+
+	public function pushDataPair($key, $value) {
+
+		$this->data[$key] = $value;
+	}
+
+	public function setData($data) {
+
+		$this->data = $data;
+	}
+}
+
+class Experiment {
+
+	public $name = '';
+	public $charts = array();
+
+	public function __construct($name) {
+
+		$this->name = $name;
+	}
+
+	public function pushChart($name, $xAxisLable, $yAxisLable) {
+
+		$chart = new chartContainer($name, $xAxisLable, $yAxisLable);
+
+		// array_push($this->charts, $chart);
+		$this->charts[$name] = $chart;
+
+		return $chart;
+		// return $this->charts[count($this->charts) - 1];
+	}
+
+}
+
 
 $chartData = array();
 
+array_push($chartData, new Experiment("testing"));
 
+$chart = $chartData[0]->pushChart('TheChart', 'xaxis', 'yaxis');
+
+$chart->pushDataPair('bob', 5);
+$chart->pushDataPair('joe', 7);
+$chart->pushDataPair('jill', 584);
+
+var_dump($chartData);
 
 
 
@@ -112,28 +204,40 @@ mysqli_close($conn); //Make sure to close out the database connection
 
 
 //	make chart
+
+echo "\n<script>";
+
+foreach ($chartData as $experiment) {
+	$experimentName = $experiment->name;
+	echo "var ctx = document.getElementById('$experimentName');";
+
+
+}
+
+echo "</script>";
+
+
+	// echo "var ctx = document.getElementById($experiemnt->name);";
+	// echo "var myChart = new Chart(ctx, {";
+	// echo "	type: 'line',";
+	// echo "	data: {";
+	// echo "		labels: [echo "'" . implode("', '", array_reverse(array_keys($chartData))) . "'";],";
+	// echo "		datasets: [{";
+
+	// echo "			label: 'Page Loads',";
+	// echo "			data: [ echo implode(', ', array_reverse($chartData));],";
+	// echo "			backgroundColor: [ 'rgba(255, 102, 1, 1)'],";
+	// echo "			borderColor: ['rgba(255, 102, 1, 0.2)']";
+	// echo "		}]";
+	// echo "	}";
+	// echo "});";
+
+
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script>
 
 
-var ctx = document.getElementById('chart');
-var myChart = new Chart(ctx, {
-	type: 'line',
-	data: {
-		labels: [ <?php echo "'" . implode("', '", array_reverse(array_keys($chartData))) . "'"; ?> ],
-		datasets: [{
-
-			label: 'Page Loads',
-			data: [ <?php echo implode(', ', array_reverse($chartData)); ?> ],
-			backgroundColor: [ 'rgba(255, 102, 1, 1)'],
-			borderColor: ['rgba(255, 102, 1, 0.2)']
-		}]
-	}
-});
-
-</script>
 
 
 
