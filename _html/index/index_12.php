@@ -249,7 +249,7 @@
                   <!-- Include -->
                   <?php
 
-                    require 'abprice.php';
+                    require '../../abprice.php';
 
                   ?>
 
@@ -357,6 +357,7 @@
 
     <!-- Flickity JS -->
     <script src="../../_js/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
 
 </body>
 
