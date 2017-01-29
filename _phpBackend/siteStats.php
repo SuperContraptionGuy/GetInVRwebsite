@@ -1,6 +1,41 @@
 <?php
 
 
+function pageTimeStat($time) {
+
+
+	updateDatabaseEnty($time, function($jsonData, $time) {
+
+
+		//	Get the current time for the timestamp value
+		$timestamp = new DateTime();
+		$timestamp = date_timezone_set($timestamp, new DateTimeZone('UTC'));
+
+		$actionObj = json_encode(
+
+			array(
+
+				"elapsedTimeSec" => $time
+			)
+		);
+
+		//	Decode the two fragments
+		$jsonIn = json_decode($jsonData);
+		$jsonAdd =  json_decode($actionObj);
+
+		//	join the fragments			BUG:	If the last page opened is not the current page being browsed(multitabed browsing) then actions could be appended to the wrong page.
+		//array_push($jsonIn[count($jsonIn) - 1], $jsonAdd);
+		$jsonIn[count($jsonIn) - 1]->elapsedTimeSec = "$time";
+
+		//var_dump($jsonIn);
+
+		//	Encode the new whole
+		$jsonOut = json_encode($jsonIn);
+
+		//	return the final json string
+		return $jsonOut;
+	});
+}
 
 //	Record a page visit, 
 function pageLoadStat($pageName) {
@@ -31,6 +66,8 @@ function pageLoadStat($pageName) {
 
 		//	Get the current time for the timestamp value
 		$timestamp = new DateTime();
+		// Use UTC time instead of server local time
+		$timestamp = date_timezone_set($timestamp, new DateTimeZone('UTC'));
 
 		//	construct the json string to be appended to the json array recieved through $jsonData
 		$pageObj = json_encode(array(
@@ -38,6 +75,7 @@ function pageLoadStat($pageName) {
 			"variant" => (int)$pageVariant,
 			"reference" => "$referer",
 			"timeStamp" => $timestamp->format('Y-m-d H:i:s'),
+			"elapsedTimeSec" => "0",
 			"actions" => array(
 
 				)
@@ -79,6 +117,7 @@ function actionStat($actionID) {
 
 		//	Get the current time for the timestamp value
 		$timestamp = new DateTime();
+		$timestamp = date_timezone_set($timestamp, new DateTimeZone('UTC'));
 
 		$actionObj = json_encode(
 
@@ -163,10 +202,12 @@ function updateDatabaseEnty($dataRelay, $modifyJson) {
 		// 			Page variant loaded
 		// 			reference action
 		// 			timestamp
+		//			Time spent on page
 		// 			actions taken on page
 		// 				button clicks
 		//					element id
 		//					timestamp
+		//			
 
 
 		// 	json string layout:
@@ -177,6 +218,7 @@ function updateDatabaseEnty($dataRelay, $modifyJson) {
 		// 			key: int
 		// 			key: text
 		// 			key: int
+		//			key: int
 		// 			key: Array
 		// 				Object
 		// 					text
