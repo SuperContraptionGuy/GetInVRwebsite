@@ -64,6 +64,21 @@
 	</div>
 </div>
 
+<div class="container">
+	<h1><center>Reviews</center></h1>
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="reviewsRetentionRate"></canvas>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<canvas id="reviewsSignUps"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 <?php
@@ -331,6 +346,10 @@ $ChartDataArray["reinforcements"] = new Experiment("reinforcements");
 $ChartDataArray["reinforcements"]->pushChart('forceRetentionRate', 'x', 'y');
 $ChartDataArray["reinforcements"]->pushChart('forceSignUps', 'x', 'y');
 
+$ChartDataArray["reviews"] = new Experiment("reviews");
+$ChartDataArray["reviews"]->pushChart('reviewsRetentionRate', 'x', 'y');
+$ChartDataArray["reviews"]->pushChart('reviewsSignUps', 'x', 'y');
+
 
 
 var_dump($visitors);
@@ -383,6 +402,20 @@ foreach ($signups as $key => $value) {
 	if($key == 1 || $key == 14) {
 
 		$ChartDataArray['reinforcements']->charts['forceSignUps']->data[$key] = $value;
+	}
+}
+
+// reviews
+foreach ($retention as $key => $value) {
+	if($key >= 1 && $key <= 7) {
+
+		$ChartDataArray['reviews']->charts['reviewsRetentionRate']->data[$key] = $value;
+	}
+}
+foreach ($signups as $key => $value) {
+	if($key >= 1 && $key <= 7) {
+
+		$ChartDataArray['reviews']->charts['reviewsSignUps']->data[$key] = $value;
 	}
 }
 
