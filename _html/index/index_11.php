@@ -247,11 +247,12 @@
                   <!-- A/B Price Testing goes here \/ -->
 
                   <!-- Include -->
-                  <?php
-
-                    require '../../abprice.php';
-
-                  ?>
+                  <ul style="list-style-type:none;"><b>Pricing:</b>
+                    <li><b>Individual Pricing:</li>
+                    <li>$30 per person per hour</li>
+                    <li>$20 per person per 45 minutes</li>
+                    <li>$15 per person per 30 minutes</li>
+                    </ul>
 
                   <!-- ============================== -->
                     <div class="formmain">
