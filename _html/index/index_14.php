@@ -15,7 +15,7 @@
     <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../_css/landing-page.css" rel="stylesheet">
+    <link href="../../_css/landing-page14.css" rel="stylesheet">
 
 
 
@@ -169,10 +169,60 @@
         <!-- /.container -->
 
     </div>
+
     <!-- /.content-section-a -->
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="iconsize">
+                  <img src="../../_assets/icon/local-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p class="texticon">You2 Industries is local company based in Sunset, Utah. We've been here since Feburary 2017</P>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2">
+                  <div class="iconsize">
+                  <img src="../../_assets/icon/local-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p class="texticon">You2 Industries is local company based in Sunset, Utah. We've been here since Feburary 2017</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="iconsize">
+                  <img src="../../_assets/icon/local-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p class="texticon">You2 Industries is local company based in Sunset, Utah. We've been here since Feburary 2017</P>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2">
+                  <div class="iconsize">
+                  <img src="../../_assets/icon/local-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p class="texticon">You2 Industries is local company based in Sunset, Utah. We've been here since Feburary 2017</P>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
     <!-- This is the form section of the website  -->
     <a name="reserve"></a> <!-- Used to reference for the menu and buttons -->
-      <div class="content-section-b"> <!-- div tag defines the class, which shifts the section to left -->
+      <div class="content-section-a"> <!-- div tag defines the class, which shifts the section to left -->
           <div class="container">
               <div class="row">
                     <hr class="section-heading-spacer">
