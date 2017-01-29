@@ -17,9 +17,12 @@ function loadAlternate($pageName) {
 
 	//	The number of alternate files for each page
 	$alternates = array(
-		'index' => 7,
+		'index' => 13,
 		'abprice' => 4
 		);
+
+	// var_dump($alternates);
+	// return var_dump($alternates);
 
 
 	if(array_key_exists("$pageName", $alternates)) {
@@ -31,6 +34,8 @@ function loadAlternate($pageName) {
 
 			//	Retrieve the session key and use it to load the page instead.
 			$pageIndex = $_SESSION[$pageName];
+
+			// return var_dump($pageIndex);
 
 			//	Debug:
 			// echo "<p>Found session.  Using Session value: $pageIndex</p>";
@@ -45,8 +50,11 @@ function loadAlternate($pageName) {
 			//	Choose an index of the random pages
 			$pageIndex = rand(1, $alts);
 
+
 			//	Set the _SESSION variable
 			$_SESSION[$pageName] = $pageIndex;
+
+			// return var_dump($pageIndex);
 
 			//	Debug:
 			// echo "<p>No current session.  Setting session value: $pageIndex</p>";

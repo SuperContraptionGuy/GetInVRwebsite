@@ -12,11 +12,12 @@
 <div class="container">
 	<h1><center>Site Viewership</center></h1>
 		<div class="row">
-			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<canvas id="VisitorCounter"></canvas>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-6">
+					<canvas id="visitorsTotal"></canvas>
+				</div>
 		</div>
 	</div>
 </div>
@@ -121,6 +122,7 @@ $result = mysqli_query($conn, $query);
 
 
 $visitors = array();
+$visitorsPerVar = array();
 $retention = array();
 $signups = array();
 
@@ -199,6 +201,16 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 
 		    	$visitors[$date] = 1;
 		    }
+
+		    if(isset($visitorsPerVar[$page->variant])) {
+
+		    	$visitorsPerVar[$page->variant] += 1;
+		    } else {
+
+		    	$visitorsPerVar[$page->variant] = 1;
+		    }
+
+		    // echo "\nPage Varient loaded: $page->variant\n";
 
 		    if(isset($retention[$page->variant])) {
 
@@ -333,6 +345,7 @@ $ChartDataArray = array();
 
 $ChartDataArray["VisitorCounter"] = new Experiment("VisitorCounter");
 $ChartDataArray["VisitorCounter"]->pushChart('VisitorCounter', 'xaxis', 'yAxis');
+$ChartDataArray["VisitorCounter"]->pushChart('visitorsTotal', 'xaxis', 'yAxis');
 
 $ChartDataArray["splash"] = new Experiment("splashRetentionRate");
 $ChartDataArray["splash"]->pushChart('splashRetentionRate', 'x', 'y');
@@ -356,11 +369,16 @@ var_dump($visitors);
 var_dump($retention);
 var_dump($signups);
 
+krsort($visitorsPerVar);
 krsort($retention);
 krsort($signups);
 
 foreach ($visitors as $key => $value) {
 	$ChartDataArray['VisitorCounter']->charts['VisitorCounter']->data[$key] = $value;
+}
+
+foreach ($visitorsPerVar as $key => $value) {
+	$ChartDataArray['VisitorCounter']->charts['visitorsTotal']->data[$key] = $value;
 }
 
 // splash page
@@ -379,13 +397,13 @@ foreach ($signups as $key => $value) {
 
 // more information
 foreach ($retention as $key => $value) {
-	if($key == 1 || ($key >= 10 && $key <= 13)) {
+	if($key == 1 || ($key >= 9 && $key <= 12)) {
 
 		$ChartDataArray['moreInfo']->charts['infoRetentionRate']->data[$key] = $value;
 	}
 }
 foreach ($signups as $key => $value) {
-	if($key == 1 || ($key >= 10 && $key <= 13)) {
+	if($key == 1 || ($key >= 9 && $key <= 12)) {
 
 		$ChartDataArray['moreInfo']->charts['infoSignUps']->data[$key] = $value;
 	}
@@ -393,13 +411,13 @@ foreach ($signups as $key => $value) {
 
 // reinforcements
 foreach ($retention as $key => $value) {
-	if($key == 1 || $key == 14) {
+	if($key == 1 || $key == 13) {
 
 		$ChartDataArray['reinforcements']->charts['forceRetentionRate']->data[$key] = $value;
 	}
 }
 foreach ($signups as $key => $value) {
-	if($key == 1 || $key == 14) {
+	if($key == 1 || $key == 13) {
 
 		$ChartDataArray['reinforcements']->charts['forceSignUps']->data[$key] = $value;
 	}

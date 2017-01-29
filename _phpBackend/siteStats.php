@@ -64,6 +64,8 @@ function pageLoadStat($pageName) {
 		$pageNameSplit = explode(".", $pageData[1]);
 		$pageVariant = $pageNameSplit[0];
 
+		// echo $pageVariant;
+
 		//	Get the current time for the timestamp value
 		$timestamp = new DateTime();
 		// Use UTC time instead of server local time
@@ -73,6 +75,7 @@ function pageLoadStat($pageName) {
 		$pageObj = json_encode(array(
 			"page" => "$pageName",
 			"variant" => (int)$pageVariant,
+			// "variant" => 15,
 			"reference" => "$referer",
 			"timeStamp" => $timestamp->format('Y-m-d H:i:s'),
 			"elapsedTimeSec" => "0",
