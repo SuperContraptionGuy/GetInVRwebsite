@@ -15,7 +15,7 @@
     <link href="../../_css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../_css/landing-page12.css" rel="stylesheet">
+    <link href="../../_css/landing-page11.css" rel="stylesheet">
 
     <!-- Flickity CSS -->
     <link href="../../_css/flickity.css" rel="stylesheet">
