@@ -112,21 +112,25 @@
 	<a  name="howitwork"></a>
     <div class="content-section-a">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
-                    <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <span style="position:relative;right:20%;"><iframe class="keepStats" id="youtube" width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe></span>
-                </div>
-                <span style="padding:25px;"><center><a href="#reserve"><button type="button" class="btn btn-lg btn-danger keepStats" id="youTubeReserve">Reserve a Time</button></a></center></span>
-            </div>
+      <div class="container">
+           <div class="row">
+               <div class="col-lg-5 col-sm-6">
+                   <hr class="section-heading-spacer">
+                   <div class="clearfix"></div>
+                   <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
+                   <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
+               </div>
+               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        </div>
+                   <div class="responsive-video">
+                     <iframe class="keepStats" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe>
+                   </div>
+
+               </div>
+               <span style="padding:25px;"><center><a href="#reserve"><button type="button" class="btn btn-lg btn-danger keepStats" id="youTubeReserve">Reserve a Time</button></a></center></span>
+           </div>
+
+       </div>
         <!-- /.container -->
 
     </div>
