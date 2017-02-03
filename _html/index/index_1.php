@@ -87,7 +87,7 @@
                       <h3>ReExperience your world</h3>
                       <div class="fullscreen-bg">
                         <video width="300" height="150" autoplay="autoplay" muted="" loop="loop">
-                          <source src="../../_assets/video/maingreetvid-nofade.mp4" type="video/mp4"/>
+                          <source src="../../_assets/video/splashvid.mp4" type="video/mp4"/>
                           <source src="../../_assets/video/test.ogv" type="video/ogg"/>
                           <source src="../../_assets/video/test.webm" type="video/webm"/>
                         </video>
