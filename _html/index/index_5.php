@@ -150,7 +150,7 @@
               <div class="col-sm-4">
                   <blockquote>
                     <p class="review">
-                      The building seemed small, but when we went in turned out alright.
+                      The building seemed small, but when we went in turned out pretty good.
                     </P>
                     <cite>-Sarah S.</cite>
                   </blockquote>
@@ -159,7 +159,7 @@
             <div class="col-sm-4">
                 <blockquote>
                   <p id="review">
-                    I brought my friends over after my first time, and we all liked it a lot.
+                    I brought my friends over after my first time, and we all had a lot of fun.
                   </P>
                   <cite>-Rick T.</cite>
                 </blockquote>
