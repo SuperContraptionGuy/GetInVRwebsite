@@ -1,12 +1,12 @@
 <?php
 
 //	Altervista host
-// define('DB_USER', 'you2industries');
-// define('DB_PASSWORD', '');
+define('DB_USER', 'you2industries');
+define('DB_PASSWORD', '');
 
 //	ContraptionGames host
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'contraptions');
+// define('DB_USER', 'root');
+// define('DB_PASSWORD', 'contraptions');
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', "my_you2industries");
