@@ -139,6 +139,13 @@ h6 {
     background-color: white;
 }
 
+.mission {
+  padding-top: 2em;
+}
+
+.moreinfo p{
+  font-size: 18px;
+}
 
 /* Begin of Game listing CSS */
 
@@ -239,6 +246,8 @@ blockquote {
     background-color: #f8f8f8;
 
 }
+
+
 
 .banner h2 {
 
