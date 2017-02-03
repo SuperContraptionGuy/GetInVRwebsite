@@ -110,21 +110,25 @@
 	<a  name="services"></a>
     <div class="content-section-a">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
-                    <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <span style="position:relative;right:20%;"><iframe class="keepStats" id="youtube" width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe></span>
-                </div>
-                <span style="padding:25px;"><center><a href="#reserve"><button type="button" class="btn btn-lg btn-danger keepStats" id="youTubeReserve">Reserve a Time</button></a></center></span>
-            </div>
+      <div class="container">
+           <div class="row">
+               <div class="col-lg-5 col-sm-6">
+                   <hr class="section-heading-spacer">
+                   <div class="clearfix"></div>
+                   <h2 class="section-heading">How It Works:<br>Virtual Reality</h2>
+                   <p class="lead">Watch this video to see how the Virtual Reality experience works.</p>
+               </div>
+               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        </div>
+                   <div class="responsive-video">
+                     <iframe class="keepStats" src="https://www.youtube.com/embed/qYfNzhLXYGc" frameborder="0" allowfullscreen></iframe>
+                   </div>
+
+               </div>
+               <span style="padding:25px;"><center><a href="#reserve"><button type="button" class="btn btn-lg btn-danger keepStats" id="youTubeReserve">Reserve a Time</button></a></center></span>
+           </div>
+
+       </div>
         <!-- /.container -->
 
     </div>
@@ -142,7 +146,7 @@
                     <p class="lead">The HTC Vive is one of the consumer and commercial ready devices today. This Headset has leading edge technology that allows the user to experience anything they want.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="_assets/img/vive.jpg" alt="">
+                    <img class="img-responsive" src="../../_assets/img/vive.jpg" alt="">
                 </div>
             </div>
 
@@ -203,7 +207,7 @@
                     <p class="lead">Not only does the HTC Vive allow you to see what you're doing, it also allows you to interact with the world you're in.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive img-rounded" src="_assets/img/vivehand.jpg" alt="">
+                    <img class="img-responsive img-rounded" src="../../_assets/img/vivehand.jpg" alt="">
                 </div>
             </div>
 
@@ -224,11 +228,12 @@
                   <!-- A/B Price Testing goes here \/ -->
 
                   <!-- Include -->
-                  <?php
-
-                    require 'abprice.php';
-
-                  ?>
+                  <ul style="list-style-type:none;"><b>Pricing:</b>
+                    <li><b>Individual Pricing:</li>
+                    <li>$30 per person per hour</li>
+                    <li>$20 per person per 45 minutes</li>
+                    <li>$15 per person per 30 minutes</li>
+                    </ul>
 
                   <!-- ============================== -->
                     <div class="formmain">

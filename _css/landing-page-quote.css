@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/_assets/img/HudsonThumbsUp.jpg) no-repeat center center;
+    background: url("../../_assets/img/HudsonThumbsUp.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -85,7 +85,21 @@ h6 {
     }
 }
 
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px; overflow: hidden;
+}
 
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .network-name {
     text-transform: uppercase;
