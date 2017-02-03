@@ -17,8 +17,7 @@ function loadAlternate($pageName) {
 
 	//	The number of alternate files for each page
 	$alternates = array(
-		'index' => 7,
-		'abprice' => 4
+		'index' => 1
 		);
 
 
