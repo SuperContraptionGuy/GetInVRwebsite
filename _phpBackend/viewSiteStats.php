@@ -1,6 +1,3 @@
-
-<canvas id="testing" width="400" height="400"></canvas>
-
 <head>
 	<link href="../_css/bootstrap.min.css" rel="stylesheet">
 	<link href="../_css/sitestat.css" rel="stylesheet">
@@ -12,16 +9,16 @@
 <div class="container">
 	<h1><center>Site Viewership</center></h1>
 		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
 				<canvas id="VisitorCounter"></canvas>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 </div>
 
-<div class="container">
+<!-- <div class="container">
 	<h1><center>Splash Page</center></h1>
 		<div class="row">
 			<div class="col-md-6">
@@ -77,7 +74,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 
@@ -163,7 +160,8 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 	echo "<tr><td>" . $row['SessionID'] . "</td><td>";  //$row['index'] the index here is a field name
 
 	$query = "SELECT COUNT(*) FROM appointments WHERE SessionID='" . $row['SessionID'] . "';";
-	$appointmentCount = mysqli_fetch_array(mysqli_query($conn, $query))['COUNT(*)'];
+	$appointmentArray = mysqli_fetch_array(mysqli_query($conn, $query));
+	$appointmentCount = $appointmentArray['COUNT(*)'];
 
 	echo "\n";
 	var_dump(intval($appointmentCount));
@@ -466,7 +464,7 @@ foreach ($ChartDataArray as $key => $experiment) {
 
 		echo "\nvar ctx = document.getElementById('$chart->name');";
 		echo "\nvar myChart = new Chart(ctx, {";
-		echo "\n	type: 'bar',";
+		echo "\n	type: 'line',";
 		echo "\n	data: {";
 		echo "\n		labels: [" . "'" . implode("', '", array_reverse(array_keys($chart->data))) . "'" . "],";
 		echo "\n		datasets: [{";
