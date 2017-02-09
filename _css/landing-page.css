@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    
+
     background-size: cover;
 }
 
@@ -236,6 +236,15 @@ blockquote {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+}
+
+.hourslist {
+  list-style-type: none;
+}
+
+.direc {
+  padding-left: 20%;
+
 }
 
 .banner {

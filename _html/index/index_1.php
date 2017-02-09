@@ -365,7 +365,48 @@
 
     </div>
     <!-- /.content-section-b -->
+    <div class="content-section-b">
 
+        <div class="container">
+
+            <div class="row">
+                  <center>
+                    <h2 class="section-heading">Where are we?<br>Here!</h2>
+                  </center>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                  <cetner>
+                    <h3>Main Location:</h3>
+                  </center>
+                    <p>327 W 1300 N, Sunset, UT 84015</p>
+                    <p>We are located inside Laser Zone</p>
+                    <ul class="hourslist"><h4>Hours:</h4>
+                      <li>Monday: closed</li>
+                      <li>Tuesday: closed</li>
+                      <li>Wednesday: 6pm - 10pm</li>
+                      <li>Thursday: 6pm - 10pm</li>
+                      <li>Friday: 6pm - 12am</li>
+                      <li>Saturday: 2pm - 12am</li>
+                    </ul>
+                    <div class="direc">
+                      <a target="_blank" href="http://maps.apple.com/?daddr=Laser+zone,Sunset,UT"><button type="button" class="btn btn-info">Get Directions</button></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                  <!-- Google Map goes here -->
+                  <center>
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?size=400x500&zoom=10&center=farmington,ut&markers=icon:https://goo.gl/Nu8ESx%7CLaser+Zone,Sunset,utah&key=AIzaSyAsI0WvfmecuaocLkWmL0nsydDMPkd3_uo">
+                  </center>
+                  <!-- End Google Map -->
+                  </div>
+                  <div class="col-lg-3"></div>
+              </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
 	<a  name="contact"></a>
     <div class="banner">
         <div class="container">
