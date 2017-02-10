@@ -238,8 +238,18 @@ blockquote {
     border-top: 3px solid #e7e7e7;
 }
 
-.booking{
+
+.hourslist {
+  list-style-type: none;
+}
+
+.direc {
+  padding-left: 20%;
+}
+
+.booking {
   padding-bottom: 2em;
+
 }
 
 .banner {
