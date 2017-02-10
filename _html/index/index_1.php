@@ -312,28 +312,19 @@
     <!-- /.container -->
 
 </div>
-    <!-- This is the form section of the website  -->
-    <a name="reserve"></a> <!-- Used to reference for the menu and buttons -->
-      <div class="content-section-b"> <!-- div tag defines the class, which shifts the section to left -->
-          <div class="container">
-            <div class="row">
-              <center><div class="booking">
-                <h1>Give it a try! Book a time slot</h1>
-              </div></center>
-            </div>
-              <div class="row">
-                  <a href="https://squareup.com/appointments/book/3GCFEB13NNG6F/you2-industries" target="_blank"class="btn btn-info btn-lg btn-block keepStats">Book a time slot</a>
-                </div>
-              </div>
-            </div>
 
-        <!-- /.container -->
-    </div>
-    <!-- /.content-section-b -->
+    <a name="reserve"></a>
     <div class="content-section-b">
 
         <div class="container">
-
+          <div class="row">
+            <center><div class="booking">
+              <h1>Reserve your new experience today!</h1>
+            </div></center>
+          </div>
+            <div class="row bookbutton">
+                <a href="https://squareup.com/appointments/book/3GCFEB13NNG6F/you2-industries" target="_blank"class="btn btn-info btn-lg btn-block keepStats">Book a time slot</a>
+              </div>
             <div class="row">
                   <center>
                     <h2 class="section-heading">Where are we?<br>Here!</h2>
