@@ -238,12 +238,17 @@ blockquote {
     border-top: 3px solid #e7e7e7;
 }
 
+
 .hourslist {
   list-style-type: none;
 }
 
 .direc {
   padding-left: 20%;
+}
+
+.booking {
+  padding-bottom: 2em;
 
 }
 
@@ -253,10 +258,7 @@ blockquote {
     color: #f8f8f8;
     background-size: cover;
     background-color: #f8f8f8;
-
 }
-
-
 
 .banner h2 {
 
