@@ -316,53 +316,18 @@
     <a name="reserve"></a> <!-- Used to reference for the menu and buttons -->
       <div class="content-section-b"> <!-- div tag defines the class, which shifts the section to left -->
           <div class="container">
+            <div class="row">
+              <center><div class="booking">
+                <h1>Give it a try! Book a time slot</h1>
+              </div></center>
+            </div>
               <div class="row">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Reserve a Time</h2>
-                    <p>Open Monday - Saturday, 1pm - 10pm; Closed Sunday</p>
-                  <!-- A/B Price Testing goes here \/ -->
-
-                  <!-- Include -->
-                  <ul style="list-style-type:none;"><b>Pricing:</b>
-                    <li><b>Individual Pricing:</li>
-                    <li>$30 per person per hour</li>
-                    <li>$20 per person per 45 minutes</li>
-                    <li>$15 per person per 30 minutes</li>
-                    </ul>
-                  <!-- ============================== -->
-                    <div class="formmain">
-                    <form action="/formSubmit.php" method="POST">
-                      <div class="form-group">
-                        <label for="Name">Name:</label>
-                        <span style="width:10em;"><input type="Name" name="firstName" class="form-control keepStats" id="nameField" required></span>
-                      </div>
-                      <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" name="emailAddress" class="form-control keepStats" id="email" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="partsize">Select Party Size:</label>
-                        <span style="padding:5px;"><input type="number" name="numOfPeople" min="1" max="20" class="form-control keepStats" id="quantityField" required></span>
-                      </div>
-                      <div class="form-group">
-                        <label for="date">Select a Date:</label>
-                        <input type="date" name="date" class="form-control keepStats" id="date" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="time">Select a Time:</label>
-                        <input type="time" name="time" class="form-control keepStats" id="time" required>
-                      </div>
-                      <input type="hidden" name="formType" value="reservation" />
-                      <button type="submit" class="btn btn-default keepStats" id="submit">Submit</button>
-                    </form>
+                  <a href="https://squareup.com/appointments/book/3GCFEB13NNG6F/you2-industries" target="_blank"class="btn btn-info btn-lg btn-block keepStats">Book a time slot</a>
                 </div>
               </div>
             </div>
 
-        </div>
         <!-- /.container -->
-
     </div>
     <!-- /.content-section-b -->
 
